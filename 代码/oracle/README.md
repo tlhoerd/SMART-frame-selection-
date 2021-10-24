@@ -3,4 +3,4 @@
 
 我们使用了两种方式来划分训练集与测试集，第一种方法是在视频维度上划分测试集与训练集，第二种是先读取一个类别下所有帧，在帧上面划分测试集与训练集。第一种方法的在训练集与测试集上的正确率是97.38%，82.47%，第二种方法是98.74%与99.96%
 
-utils_picture采用的是在图片上划分测试集，utils_video是在视频上划分测试集
+utils_picture采用的是在图片上划分数据集对应的参数是single_frame_selection_picture；utils_video是在视频上划分数据集，对应参数是single_frame_selection_video
