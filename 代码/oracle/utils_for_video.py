@@ -33,7 +33,7 @@ def read_split_data(root: str, val_rate: float = 0.2):
     every_class_num = []  # 存储每个类别的样本总数
     supported = [".jpg", ".JPG", ".png", ".PNG"]  # 支持的文件后缀类型
     # 遍历每个文件夹下的文件
-    
+    all_val = []
     for cla in action_class:
         cla_path = os.path.join(root, cla)#某一类的video
         video_name = [name for name in os.listdir(cla_path) if os.path.isdir(os.path.join(cla_path, name))]#video文件的名字, list
